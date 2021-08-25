@@ -57,18 +57,16 @@ export default function PersianDatePicker({
     React.useEffect(() => {
         if (visible == true)
             sheetRef.current.snapTo(1);
+        else{
+            sheetRef.current.snapTo(0);
+        }
     }, [visible])
 
 
     const onSubmitDate = ()=>{
         let value = {value : [year,month,day]}
         let result = onConfirm(value);
-        if(result === false)
-        {
-
-        }else
-            sheetRef.current.snapTo(0)
-
+        sheetRef.current.snapTo(0)
     }
 
     const renderContent = () => (
@@ -126,9 +124,8 @@ export default function PersianDatePicker({
     return (
             <BottomSheet
                 ref={sheetRef}
-                snapPoints={[0,350]}
+                snapPoints={[-350,250]}
                 initialSnap={0}
-                
                 borderRadius={borderRadius}
                 {...bottomSheetProps}
                 renderContent={renderContent}
@@ -142,7 +139,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'space-around',
         backgroundColor: 'white',
-        height:350,
+        height:250,
         padding:0,
         marginTop: 0,
     },
