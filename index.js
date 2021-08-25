@@ -46,8 +46,8 @@ export default function PersianDatePicker({
         var dayList = Array(29).fill(0).map((e, i) => i + 1);
 
     var yearList = [];
-    var startYear = (startYear) ? startYear : 1330;
-    var endYear = (endYear) ? endYear : 1400;
+    startYear = (startYear) ? startYear : 1330;
+    endYear = (endYear) ? endYear : 1400;
     for (let a = startYear; a <= endYear; a++)
         yearList.push(a);
 
