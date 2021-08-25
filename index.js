@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import Animated from 'react-native-reanimated';
-import { Picker } from '@react-native-picker/picker';
+import {Picker} from '@react-native-community/picker';
 import BottomSheet from 'reanimated-bottom-sheet';
 // import moment from 'moment';
 // moment.locale("fa");
