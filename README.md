@@ -17,7 +17,7 @@ this package uses [reanimated-bottom-sheet](https://github.com/osdnk/react-nativ
 1) Open a Terminal in the project root and run:
 
 ```sh
-npm i react-native-persian-date-picker2
+yarn add https://github.com/design-pro/react-native-persian-date-picker
 ```
 
 Now we need to install [`native bottom sheet behavior`](https://github.com/osdnk/react-native-reanimated-bottom-sheet) and [`@react-native-picker/picker`](https://github.com/react-native-picker/picker).
